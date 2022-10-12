@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Lunox-band</title>
+</head>
+
+<body>
+    <header class="page-header">
+    <div class="container">
+        <div class="navig">
+            <div class="logo">
+                <p class="logo__img">LUNOX BAND</p>
+            </div>
+            <div class="hamb">
+                <div class="humb__field" id="humb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+                <ul class="menu-list" id="menu">
+                    <li><a href="#main" class="main__link menu-link">MAIN</a></li>
+                    <li><a href="#dogs" class="dogs__link menu-link">OUR DOGS</a></li>
+                    <li><a href="#gallery" class="galery__link menu-link">GALLERY</a></li>
+                    <li><a href="#about" class="about__link menu-link">ABOUT US</a></li>
+                    <li><a href="#contact" class="contact__link menu-link">CONTACTS</a></li>
+                </ul>
+
+        </div>
+        <div class="popup" id="popup"></div>
+    </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="container">
+            <h1 class="main__title">LUNOX-BAND KENNEL</h1>
+            <p class="main__under">Professional kennel of australin sheperd and rough collie</p>
+            <button class="main__bottom" type="button" value="Contact us" >Contact us</button>
+        </div>    
+    </section>
+
+    <section class="dogs" id="dogs">
+        <div class="dogs__contain container">
+            <h2 class="dogs__title"> OUR DOGS </h2>
+            <div class="chelsea"> 
+                <div class="img-chelsea">
+                    <img class="imgch" src="img/chels.jpg" width="700">
+                </div>
+                <div class="info__chelsea">
+                    <h2 class="title__chelsea">BACARDIYA PROKSENY aka CHELSEA</h2>
+                    <p class="under__chelsea"> Our first collie. Beautiful and lovely. Have soft character, like real collie must have.<br>
+                        <br>
+                    D.O.B: 21.03.2013<br>
+                        <br>
+                    Titles: Junior Champion of Belarus, Champion of Belarus<br>
+                    </p>
+                    <button type="button" value="Read more">Read more</button>
+                </div>
+            </div>
+            <div class="ciri"> 
+                <div class="info__ciri">
+                    <h2 class="title__ciri">SEVENTY SEVEN MY EXCLUSIVE DREAM aka CIRI</h2>
+                    <p class="under__ciri">Our australian sheperd or (more famous) aussie. Young, active, funny and beautiful girl. <br>
+                    <br>
+                    D.O.B: 28.06.2020<br>
+                    <br>
+                    Titles: Junior Champion of Belarus, Junior Champion of Breed, Champion of Belarus</p>
+                    <button type="button" value="Read more">Read more</button>
+                </div>
+                <div class="img__ciri">
+                    <img class="imgci" src="img/ciri.jpg" width="700">
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="gallery-img" src="galery/DSC_0561.JPG">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="gallery-img" src="galery/DSC_8554.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="gallery-img" src="galery/DSC_9962.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title__about">ABOUT US</h2>
+            <p class="under__about">In our breeding we adhere to the principles</p>
+            <div class="principle">
+                <div class="row1">
+                    <div class="health princ">
+                        <img src="icons/health.svg"  class="icons" width="80" height="80">
+                        <p class="text__health text">Health of our dogs - our main priority. All of our dogs and puppies have tests for breeding.</p>
+                    </div>
+                    <div class="stand princ">
+                        <img src="icons/stand.svg" class="icons" width="80" height="80">
+                        <p class="text__stand text">We regularly attend exhibitions.Our dogs have a lot of titles and positive description of judges. </p>
+                    </div>
+                </div>    
+                <div class="row2">
+                    <div class="support princ">
+                        <img src="icons/supp.svg" class="icons sup-img" width="80" height="80" >
+                        <p class="text__sup text">We support our graduates with any help for all life. </p>
+                    </div>
+                    <div class="love princ">
+                        <img src= "icons/love.svg" class="icons" width="80" height="80" >
+                        <p class="text__love text">And of course we do these with big love to our dogs, puppies and people.</p>
+                    </div>
+                </div>    
+            </div>
+    </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="contacts" id="contact"> 
+                <div class="mail-img">
+                    <img src="icons/mail.svg" onerror="this.onerror=null; this.src='icons/mail.png'" width="auto" height="40" alt="mail">
+                </div>
+                <div class="email">
+                    <p> polinaas2010@gmail.com</p>
+                </div>
+                <div class="geo">
+                    <p> Belarus,Gomel</p>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

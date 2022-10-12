@@ -1,0 +1,23 @@
+{
+  "name": "lunox-kennel",
+  "version": "1.0.0",
+  "description": "landing page ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cirillaa/lunox-kennel.git"
+  },
+  "keywords": [
+    "landing",
+    "dogkennel"
+  ],
+  "author": "Polina Ilyinkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cirillaa/lunox-kennel/issues"
+  },
+  "homepage": "https://github.com/Cirillaa/lunox-kennel#readme"
+}
