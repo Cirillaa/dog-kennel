@@ -254,8 +254,26 @@ button:hover {
 .logo__img:hover{
     background-color: #006D4F;
     color:#fff;
+    transition: 0.2s ease;
 }
-
+.social-icon {
+    width: 100px;
+    height: auto;
+    padding: 1rem;
+}
+.social-icons {
+    display:flex;
+    justify-content:space-around;
+}
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
 
 @media (max-width: 1250px) {
     .container {
