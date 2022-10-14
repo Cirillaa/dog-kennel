@@ -1,3 +1,5 @@
+'use strict'
+
 let butt1 = document.querySelector('#textButton');
 let butt2 = document.querySelector('#textButton2');
 let chelsea = document.querySelector('.chelsea-more');

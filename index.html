@@ -164,6 +164,24 @@
 
     <footer class="page-footer">
         <div class="container">
+            <section class="form-section">
+                <form id="form" class="form__body" action="#">
+                    <h3 class="form__title">Contact with us:</h3>
+                    <div class="form__item">
+                        <label for="formName" class="form__label _req">Name*:</label>
+                        <input type="text" name="name" id="formName" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label _req _email">E-mail*:</label>
+                        <input type="text" name="email" id="formEmail" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formText" class="form__label">Message:</label>
+                        <textarea class="form__input" id="formText" name="text"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">send</button>
+                </form>
+            </section>
             <section class="social-links">
                 <h3> Follow us</h3>
                 <div class="social-icons">
@@ -194,5 +212,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="buttonText.js"></script>
+    <script src="formScript.js"></script>
 </body>
 </html>
