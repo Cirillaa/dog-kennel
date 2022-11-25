@@ -315,7 +315,7 @@ h3 {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease 0s;
-    background:  url(/icons/load.gif) center / 50px no-repeat;
+    background:  url(icons/load.gif) center / 50px no-repeat;
 }
 .form__body._sending::after{
     opacity: 1;
