@@ -285,6 +285,18 @@ h3 {
 .hidden {
     display: none;
 }
+.send-mess {
+    width: 100%;
+    font-size: 22px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.successSend {
+    border: 1px solid #074131;
+    background-color: #14b7525c;
+}
 
 .form-section {
     max-width: 80%;
@@ -303,7 +315,7 @@ h3 {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease 0s;
-    background: rgba(51, 51, 51, 0.2)  url(/icons/load.gif) center / 50px no-repeat;
+    background:  url(/icons/load.gif) center / 50px no-repeat;
 }
 .form__body._sending::after{
     opacity: 1;

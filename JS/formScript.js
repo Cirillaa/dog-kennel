@@ -9,40 +9,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let error = formValidate(form);
 
-        let formData =  new FormData(form);
+        const formData =  new FormData(form);
+        const sendingMess = document.getElementById('send-mess');
 
         if(error === 0){
             form.classList.add('_sending');
-            // let response = await fetch('sendmail.php', {
-            //     method: 'POST',
-            //     body: formData
-            // });
-            // if(response.ok){
-            //     let result = await response.json();
-            //     alert(result.message);
-            //     form.reset();
-            // }else {
-            //     alert('mistake')
-            // }
+            let response = await fetch(
+              "https://script.google.com/macros/s/AKfycbyfXa4G1lYUK73ATRAIDJhfkcErqqKz0uJNpuqybOA9xsviwE_9fd_jPxEL9chH16CMPg/exec",
+              {
+                method: "POST",
+                body: formData,
+              }
+            );
+            if(response.ok){
+                form.classList.remove("_sending");
+                form.reset();
+                sendingMess.innerHTML = 'Successfully sent!';
+                sendingMess.classList.add('successSend')
+            }else {
+                sendingMess.innerHTML = 'Something went wrong! Please, try later.'
+            }
         }else {
-            alert('Put text')
+            sendingMess.innerHTML = 'Please, enter valid data!';
+            sendingMess.classList.remove('hidden');
         }
     }
 
     function formValidate(form) {
         let error = 0;
-        let formReq = document.querySelectorAll('._req');
+        const inputs = form.querySelectorAll('.inp');
 
-        for(let i = 0; i < formReq.length; i++) {
-            const input = formReq[i];
+        console.log(inputs);
+
+        for(let input of inputs) {
             formRemoveError(input);
 
             if(input.classList.contains('_email')) {
-                if(emailTest(input)){
+                if(!emailTest(input)){
                     formAddError(input)
                     error++;
                 }
-            }else {
+            } else {
                 if(input.value === '') {
                     formAddError(input);
                     error++; 
