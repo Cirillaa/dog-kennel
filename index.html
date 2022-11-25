@@ -62,7 +62,7 @@
                     <button type="button" id="textButton" value="Read more">Read more</button>
                 </div>
             </div>
-            <div class="chelsea-more hidden">
+            <div class="chelsea-more hidden ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam sapien, lobortis nec nibh et, porttitor
                     bibendum
                     arcu. Nullam finibus porta massa. Nulla suscipit, libero a convallis gravida, massa nulla pretium massa, ut
@@ -168,17 +168,18 @@
                 <form id="form" class="form__body" action="#">
                     <h3 class="form__title">Contact with us:</h3>
                     <div class="form__item">
-                        <label for="formName" class="form__label _req">Name*:</label>
-                        <input type="text" name="name" id="formName" class="form__input">
+                        <label for="formName" class="form__label ">Name:</label>
+                        <input type="text" name="name" id="formName" class="inp form__input">
                     </div>
                     <div class="form__item">
-                        <label for="formEmail" class="form__label _req _email">E-mail*:</label>
-                        <input type="text" name="email" id="formEmail" class="form__input">
+                        <label for="formEmail" class="form__label ">E-mail:</label>
+                        <input type="text" name="email" id="formEmail" class="inp form__input _email">
                     </div>
                     <div class="form__item">
                         <label for="formText" class="form__label">Message:</label>
-                        <textarea class="form__input" id="formText" name="text"></textarea>
+                        <textarea class="form__input inp" id="formText" name="text"></textarea>
                     </div>
+                    <div class="hidden send-mess" id="send-mess"></div>
                     <button class="form__button" type="submit">send</button>
                 </form>
             </section>
@@ -210,8 +211,8 @@
         </div>   
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="buttonText.js"></script>
-    <script src="formScript.js"></script>
+    <script src="/JS/script.js"></script>
+    <script src="/JS/buttonText.js"></script>
+    <script src="/JS/formScript.js"></script>
 </body>
 </html>
